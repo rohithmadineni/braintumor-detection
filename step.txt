@@ -1,0 +1,9 @@
+step 1: Win + R, type regedit
+step 2: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled
+step 3: set it to 1
+step 4: restart device
+
+pip install numpy pillow scikit-learn tensorflow flask werkzeug
+
+pip install numpy matplotlib pillow scikit-learn tensorflow flask werkzeug
+

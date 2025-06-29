@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Detection Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Result</h1>
+        <img src="{{ url_for('uploaded_file', filename=image_url) }}" alt="Uploaded MRI" class="img-fluid">
+        <p>Prediction: {{ result }}</p>
+        <p>Model Accuracy: {{ '%.2f' % (accuracy * 100) }}%</p>
+        <a href="/" class="btn btn-secondary">Upload another MRI scan</a>
+    </div>
+</body>
+</html>
